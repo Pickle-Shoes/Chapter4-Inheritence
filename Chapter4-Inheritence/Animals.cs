@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Chapter4_Inheritence
 {
-    internal class Animals
+    public abstract class Animals
     {
         //fields/attributes
-        public int NumberOfLegs;
-        public int PairsOfEyes;
+        protected virtual int _numberOfLegs { get { return 0; } }
+        protected virtual int _pairsOfEyes { get { return 0; } }
 
         //property
         public int Age { get; set; }
@@ -25,7 +25,7 @@ namespace Chapter4_Inheritence
         //Methods
         public void PrintLegsAndEyes()
         {
-            Console.WriteLine($"Legs: {this.NumberOfLegs} Eyes: {this.PairsOfEyes * 2}");
+            Console.WriteLine($"Legs: {this._numberOfLegs} Eyes: {this._pairsOfEyes * 2}");
 
         }
         
