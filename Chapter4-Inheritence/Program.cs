@@ -5,12 +5,8 @@ namespace Chapter4_Inheritence
     {
         static void Main(string[] args)
         {
-            Animals a = new Animals(3);
-            a.PrintAge(); //3
-            a.PrintLegsAndEyes(); //0 0
-            a.PairsOfEyes = 1;
-            a.NumberOfLegs = 4;
-            a.PrintLegsAndEyes(); // 4, 2
+            var a = new Mammal(3);
+            a.PrintLegsAndEyes(); // 0, 0
             a.Age = 5;
             a.PrintAge();
         }
