@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chapter4_Inheritence
 {
-    public class DomesticMammal :Mammal
+    public abstract class DomesticMammal :Mammal
     {
         //fields
 
@@ -22,6 +22,20 @@ namespace Chapter4_Inheritence
             Console.WriteLine("Domestic mammal created");
         }
 
+        public DomesticMammal(string name, int age, string favoriteToy, bool isPregnant) : base(age, isPregnant)
+        {
+            Name = name;
+            FavoriteToy = favoriteToy;
+            Console.WriteLine("Domestic mammal created");
+        }
+
         //methods
+
+        public virtual void Talk()
+        {
+            Console.WriteLine($"{Name}: talks");
+        }
+
+
     }
 }
