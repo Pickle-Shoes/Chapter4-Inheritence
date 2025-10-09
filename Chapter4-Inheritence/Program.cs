@@ -16,13 +16,13 @@ namespace Chapter4_Inheritence
             a.PrintBreed();
             */
 
-            var c = new SiameseCat("Gary", 6, "Yarn");
+            var c = new SiameseCat("Gary", 6, "Yarn", true);
             c.PrintLives();
             c.PrintBreed();
             c.PrintLegsAndEyes();
             c.DeductLife();
             c.PrintLives();
-
+            Console.WriteLine(c.IsPregnant);
         }
     }
 }

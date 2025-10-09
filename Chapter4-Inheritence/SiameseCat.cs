@@ -12,7 +12,7 @@ namespace Chapter4_Inheritence
         public override string Breed => "Siamese";
 
         //constructors
-        public SiameseCat(string name, int age, string favoriteToy) : base(name, age, favoriteToy)
+        public SiameseCat(string name, int age, string favoriteToy, bool isPregnant) : base(name, age, favoriteToy, isPregnant )
         {
             Console.WriteLine("SiameseCat created.");
         }

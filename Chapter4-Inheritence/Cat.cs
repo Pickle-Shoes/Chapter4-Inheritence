@@ -17,7 +17,7 @@ namespace Chapter4_Inheritence
 
         //constructor
 
-        public Cat(string name, int age, string favoriteToy) : base (name, age, favoriteToy)
+        public Cat(string name, int age, string favoriteToy, bool isPregnant) : base (name, age, favoriteToy, isPregnant)
         {
             Console.WriteLine("Cat created.");
         }
